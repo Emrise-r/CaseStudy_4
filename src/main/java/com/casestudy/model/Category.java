@@ -10,19 +10,19 @@ public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long ctid;
+    private Long category_id;
 
     private String name;
 
     @OneToMany(mappedBy = "category")
     private Set<Product> products;
 
-    public Long getCtid() {
-        return ctid;
+    public Long getCategory_id() {
+        return category_id;
     }
 
-    public void setCtid(Long ctid) {
-        this.ctid = ctid;
+    public void setCategory_id(Long category_id) {
+        this.category_id = category_id;
     }
 
     public String getName() {

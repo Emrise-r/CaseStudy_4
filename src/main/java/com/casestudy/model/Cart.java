@@ -9,7 +9,7 @@ public class Cart {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long cid;
+    private Long cart_id;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
@@ -23,12 +23,12 @@ public class Cart {
 
     public Cart() {}
 
-    public Long getCid() {
-        return cid;
+    public Long getCart_id() {
+        return cart_id;
     }
 
-    public void setCid(Long cid) {
-        this.cid = cid;
+    public void setCart_id(Long cart_id) {
+        this.cart_id = cart_id;
     }
 
     public User getUser() {

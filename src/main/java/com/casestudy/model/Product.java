@@ -10,7 +10,7 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long pid;
+    private Long product_id;
 
     private String name;
 
@@ -29,12 +29,12 @@ public class Product {
     @JoinColumn(name = "category_id")
     private Category category;
 
-    public Long getPid() {
-        return pid;
+    public Long getProduct_id() {
+        return product_id;
     }
 
-    public void setPid(Long pid) {
-        this.pid = pid;
+    public void setProduct_id(Long product_id) {
+        this.product_id = product_id;
     }
 
     public String getName() {
